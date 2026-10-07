@@ -1405,6 +1405,10 @@ a {
     color:
         #ffffff !important;
 }
+/* Hide Streamlit's automatic multipage navigation */
+[data-testid="stSidebarNav"] {
+    display: none;
+}
 
 
 /* =========================================================
