@@ -1,0 +1,1412 @@
+/* =========================================================
+   NEXA ANALYTICS - PROFESSIONAL COLORFUL THEME
+   ========================================================= */
+
+:root {
+    /* -----------------------------------------------------
+       CORE NEXA COLORS
+       ----------------------------------------------------- */
+
+    --navy: #082447;
+    --navy-2: #0b3159;
+    --navy-3: #124775;
+
+    --blue: #1674d1;
+    --blue-dark: #0b5cad;
+    --blue-light: #eaf3ff;
+    --blue-glow: #43a5ff;
+
+    --purple: #7c3aed;
+    --purple-light: #ede9fe;
+    --purple-glow: #a78bfa;
+
+    --cyan: #06b6d4;
+    --cyan-light: #cffafe;
+
+    --green: #28b67a;
+    --green-dark: #16845a;
+    --green-light: #dcfce7;
+
+    --orange: #f97316;
+    --orange-light: #ffedd5;
+
+    --pink: #ec4899;
+    --pink-light: #fce7f3;
+
+    --red: #ef4444;
+    --red-light: #fee2e2;
+
+    --yellow: #f59e0b;
+    --yellow-light: #fef3c7;
+
+    /* -----------------------------------------------------
+       BACKGROUND
+       ----------------------------------------------------- */
+
+    --bg: #f4f7fb;
+    --bg-2: #eef4fb;
+
+    --white: #ffffff;
+
+    /* -----------------------------------------------------
+       TEXT
+       ----------------------------------------------------- */
+
+    --text: #173b63;
+    --text-dark: #082447;
+    --muted: #71849a;
+    --muted-light: #91a1b3;
+
+    /* -----------------------------------------------------
+       BORDERS
+       ----------------------------------------------------- */
+
+    --border: #dfe7f0;
+    --border-light: #edf2f7;
+
+    /* -----------------------------------------------------
+       SHADOWS
+       ----------------------------------------------------- */
+
+    --shadow-sm:
+        0 2px 8px rgba(8, 36, 71, 0.06);
+
+    --shadow-md:
+        0 8px 24px rgba(8, 36, 71, 0.08);
+
+    --shadow-lg:
+        0 14px 35px rgba(8, 36, 71, 0.11);
+
+    --shadow-blue:
+        0 0 18px rgba(22, 116, 209, 0.25);
+
+    --shadow-purple:
+        0 0 18px rgba(124, 58, 237, 0.22);
+
+    /* -----------------------------------------------------
+       RADIUS
+       ----------------------------------------------------- */
+
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 14px;
+    --radius-xl: 18px;
+
+    /* -----------------------------------------------------
+       TRANSITIONS
+       ----------------------------------------------------- */
+
+    --transition:
+        all 0.25s ease;
+}
+
+
+/* =========================================================
+   GLOBAL APP
+   ========================================================= */
+
+html,
+body,
+[data-testid="stAppViewContainer"] {
+    background:
+        linear-gradient(
+            135deg,
+            #f7faff 0%,
+            #f3f7fc 50%,
+            #eef5fb 100%
+        ) !important;
+}
+
+[data-testid="stAppViewContainer"] {
+    color: var(--text);
+}
+
+
+/* =========================================================
+   MAIN CONTENT
+   ========================================================= */
+
+.main .block-container {
+    max-width: 1450px !important;
+
+    padding-top: 2rem !important;
+    padding-bottom: 3rem !important;
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+}
+
+
+/* =========================================================
+   SIDEBAR
+   ========================================================= */
+
+section[data-testid="stSidebar"] {
+    background:
+        linear-gradient(
+            180deg,
+            #061d3b 0%,
+            #082447 42%,
+            #0b3159 100%
+        ) !important;
+
+    border-right: 1px solid
+        rgba(255, 255, 255, 0.08) !important;
+
+    box-shadow:
+        8px 0 30px
+        rgba(8, 36, 71, 0.15) !important;
+}
+
+
+section[data-testid="stSidebar"] > div {
+    background: transparent !important;
+}
+
+
+/* =========================================================
+   SIDEBAR BRAND
+   ========================================================= */
+
+.sidebar-brand {
+    padding:
+        16px 10px 18px 10px;
+
+    border-radius: 14px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(22, 116, 209, 0.22),
+            rgba(124, 58, 237, 0.15),
+            rgba(6, 182, 212, 0.10)
+        );
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.10);
+
+    box-shadow:
+        0 0 20px
+        rgba(22, 116, 209, 0.10);
+}
+
+
+.sidebar-brand-title {
+    color: #ffffff;
+
+    font-size: 18px;
+    font-weight: 800;
+
+    letter-spacing: 0.8px;
+
+    text-shadow:
+        0 0 12px
+        rgba(67, 165, 255, 0.35);
+}
+
+
+.sidebar-brand-subtitle {
+    color: rgba(255, 255, 255, 0.65);
+
+    font-size: 10px;
+
+    margin-top: 4px;
+
+    letter-spacing: 0.2px;
+}
+
+
+/* =========================================================
+   SIDEBAR DIVIDERS
+   ========================================================= */
+
+section[data-testid="stSidebar"] hr {
+    border: none !important;
+
+    height: 1px !important;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(67, 165, 255, 0.40),
+            rgba(167, 139, 250, 0.35),
+            transparent
+        ) !important;
+
+    margin:
+        16px 0 !important;
+}
+
+
+/* =========================================================
+   SIDEBAR SECTION TITLES
+   ========================================================= */
+
+.sidebar-section-title {
+    color: #8ecbff !important;
+
+    font-size: 10px !important;
+
+    font-weight: 800 !important;
+
+    letter-spacing: 1.2px !important;
+
+    text-transform: uppercase;
+
+    margin:
+        8px 0 10px 2px !important;
+}
+
+
+/* =========================================================
+   SIDEBAR NAVIGATION
+   ========================================================= */
+
+section[data-testid="stSidebar"] a {
+    color:
+        rgba(255, 255, 255, 0.82) !important;
+
+    border-radius: 8px !important;
+
+    transition:
+        all 0.25s ease !important;
+}
+
+
+section[data-testid="stSidebar"] a:hover {
+    color: #ffffff !important;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(22, 116, 209, 0.30),
+            rgba(124, 58, 237, 0.20)
+        ) !important;
+
+    box-shadow:
+        0 0 14px
+        rgba(22, 116, 209, 0.15);
+
+    transform:
+        translateX(2px);
+}
+
+
+/* Active navigation */
+
+section[data-testid="stSidebar"]
+a[aria-current="page"] {
+    color: #ffffff !important;
+
+    background:
+        linear-gradient(
+            90deg,
+            #1674d1,
+            #395edb,
+            #7c3aed
+        ) !important;
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.14) !important;
+
+    box-shadow:
+        0 0 10px
+        rgba(22, 116, 209, 0.30),
+        0 0 20px
+        rgba(124, 58, 237, 0.16) !important;
+}
+
+
+/* =========================================================
+   SIDEBAR STATUS
+   ========================================================= */
+
+section[data-testid="stSidebar"]
+.stSuccess {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(40, 182, 122, 0.20),
+            rgba(6, 182, 212, 0.12)
+        ) !important;
+
+    border:
+        1px solid
+        rgba(40, 182, 122, 0.28) !important;
+
+    border-radius: 10px !important;
+
+    color: #b8ffdf !important;
+
+    box-shadow:
+        0 0 14px
+        rgba(40, 182, 122, 0.12) !important;
+}
+
+
+/* =========================================================
+   HERO SECTION
+   ========================================================= */
+
+.hero-title {
+    color: var(--text-dark);
+
+    font-size: 30px;
+
+    font-weight: 800;
+
+    letter-spacing: -0.6px;
+
+    margin-bottom: 8px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #082447,
+            #1674d1,
+            #7c3aed
+        );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.hero-subtitle {
+    color: var(--muted);
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    margin-bottom: 8px;
+}
+
+
+/* =========================================================
+   LIVE ANALYTICS BADGE
+   ========================================================= */
+
+.live-badge {
+    display: inline-block;
+
+    padding:
+        8px 18px;
+
+    border-radius: 999px;
+
+    color: #1674d1;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.5px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #edf6ff,
+            #f2ecff
+        );
+
+    border:
+        1px solid
+        #cfe3fa;
+
+    box-shadow:
+        0 0 15px
+        rgba(22, 116, 209, 0.12);
+
+    animation:
+        liveGlow 2.5s ease-in-out infinite;
+}
+
+
+@keyframes liveGlow {
+
+    0% {
+        box-shadow:
+            0 0 8px
+            rgba(22, 116, 209, 0.10);
+    }
+
+    50% {
+        box-shadow:
+            0 0 18px
+            rgba(22, 116, 209, 0.28);
+    }
+
+    100% {
+        box-shadow:
+            0 0 8px
+            rgba(22, 116, 209, 0.10);
+    }
+}
+
+
+/* =========================================================
+   SECTION TITLES
+   ========================================================= */
+
+.section-title {
+    color: var(--text-dark);
+
+    font-size: 15px;
+
+    font-weight: 800;
+
+    margin-top: 22px;
+    margin-bottom: 14px;
+
+    position: relative;
+
+    padding-left: 12px;
+}
+
+
+.section-title::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 2px;
+
+    width: 4px;
+    height: 18px;
+
+    border-radius: 5px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #1674d1,
+            #7c3aed,
+            #06b6d4
+        );
+
+    box-shadow:
+        0 0 10px
+        rgba(22, 116, 209, 0.30);
+}
+
+
+/* =========================================================
+   KPI CARDS
+   ========================================================= */
+
+.kpi-card {
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff 0%,
+            #f8fbff 100%
+        );
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius:
+        var(--radius-lg);
+
+    padding:
+        16px 16px 14px 16px;
+
+    min-height: 105px;
+
+    box-shadow:
+        var(--shadow-sm);
+
+    transition:
+        all 0.28s ease;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.kpi-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 3px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #1674d1,
+            #06b6d4,
+            #7c3aed
+        );
+}
+
+
+.kpi-card:hover {
+    transform:
+        translateY(-4px);
+
+    box-shadow:
+        var(--shadow-lg),
+        0 0 18px
+        rgba(22, 116, 209, 0.10);
+
+    border-color:
+        #c8dcf1;
+}
+
+
+.kpi-label {
+    color: #60758d;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    margin-bottom: 7px;
+}
+
+
+.kpi-value {
+    color: #082447;
+
+    font-size: 20px;
+
+    font-weight: 800;
+
+    letter-spacing: -0.3px;
+
+    margin-bottom: 5px;
+}
+
+
+.kpi-footer {
+    color: #8a9aac;
+
+    font-size: 9px;
+
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   PANELS
+   ========================================================= */
+
+.panel {
+    background:
+        #ffffff;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius:
+        var(--radius-lg);
+
+    box-shadow:
+        var(--shadow-sm);
+
+    overflow: hidden;
+
+    transition:
+        all 0.25s ease;
+}
+
+
+.panel:hover {
+    box-shadow:
+        var(--shadow-md);
+}
+
+
+.panel-title {
+    color: var(--text-dark);
+
+    font-size: 13px;
+
+    font-weight: 800;
+}
+
+
+.panel-subtitle {
+    color: var(--muted);
+
+    font-size: 9px;
+
+    margin-top: 4px;
+}
+
+
+/* =========================================================
+   FILTERS
+   ========================================================= */
+
+[data-testid="stDateInput"],
+[data-testid="stMultiSelect"] {
+    margin-bottom: 8px;
+}
+
+
+[data-testid="stDateInput"] label,
+[data-testid="stMultiSelect"] label {
+    color: var(--text) !important;
+
+    font-size: 10px !important;
+
+    font-weight: 600 !important;
+}
+
+
+/* =========================================================
+   INPUT BOXES
+   ========================================================= */
+
+div[data-baseweb="select"] > div {
+    background:
+        #ffffff !important;
+
+    border:
+        1px solid
+        #d9e4ef !important;
+
+    border-radius:
+        8px !important;
+
+    min-height: 36px !important;
+
+    transition:
+        all 0.2s ease !important;
+}
+
+
+div[data-baseweb="select"] > div:hover {
+    border-color:
+        #1674d1 !important;
+
+    box-shadow:
+        0 0 8px
+        rgba(22, 116, 209, 0.10) !important;
+}
+
+
+/* =========================================================
+   MULTISELECT TAGS
+   ========================================================= */
+
+span[data-baseweb="tag"] {
+    background:
+        linear-gradient(
+            135deg,
+            #1674d1,
+            #395edb
+        ) !important;
+
+    color: #ffffff !important;
+
+    border-radius:
+        5px !important;
+}
+
+
+span[data-baseweb="tag"] svg {
+    color: #ffffff !important;
+}
+
+
+/* =========================================================
+   DATE INPUT
+   ========================================================= */
+
+[data-testid="stDateInput"] input {
+    background:
+        #ffffff !important;
+
+    color:
+        var(--text) !important;
+
+    border:
+        1px solid
+        #d9e4ef !important;
+
+    border-radius:
+        8px !important;
+}
+
+
+/* =========================================================
+   FILE UPLOADER - MAIN DROPZONE
+   ========================================================= */
+
+[data-testid="stFileUploader"] {
+    margin-top: 6px !important;
+
+    margin-bottom: 8px !important;
+}
+
+
+[data-testid="stFileUploaderDropzone"] {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(22, 116, 209, 0.16),
+            rgba(124, 58, 237, 0.14),
+            rgba(6, 182, 212, 0.12)
+        ) !important;
+
+    border:
+        1px dashed
+        rgba(67, 165, 255, 0.80) !important;
+
+    border-radius:
+        14px !important;
+
+    min-height:
+        82px !important;
+
+    padding:
+        10px !important;
+
+    box-shadow:
+        0 0 12px
+        rgba(22, 116, 209, 0.15),
+        inset 0 0 20px
+        rgba(255, 255, 255, 0.08) !important;
+
+    transition:
+        all 0.30s ease !important;
+
+    animation:
+        uploadPulse 3s ease-in-out infinite;
+}
+
+
+@keyframes uploadPulse {
+
+    0% {
+        border-color:
+            rgba(67, 165, 255, 0.65);
+
+        box-shadow:
+            0 0 10px
+            rgba(22, 116, 209, 0.12);
+    }
+
+    50% {
+        border-color:
+            rgba(167, 139, 250, 0.95);
+
+        box-shadow:
+            0 0 22px
+            rgba(124, 58, 237, 0.25);
+    }
+
+    100% {
+        border-color:
+            rgba(67, 165, 255, 0.65);
+
+        box-shadow:
+            0 0 10px
+            rgba(22, 116, 209, 0.12);
+    }
+}
+
+
+[data-testid="stFileUploaderDropzone"]:hover {
+    transform:
+        translateY(-2px);
+
+    border-color:
+        #43a5ff !important;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(22, 116, 209, 0.25),
+            rgba(124, 58, 237, 0.22),
+            rgba(6, 182, 212, 0.18)
+        ) !important;
+
+    box-shadow:
+        0 0 12px
+        rgba(67, 165, 255, 0.30),
+        0 0 30px
+        rgba(124, 58, 237, 0.18) !important;
+}
+
+
+/* =========================================================
+   FILE UPLOADER TEXT
+   ========================================================= */
+
+[data-testid="stFileUploaderDropzone"] span {
+    color:
+        #ffffff !important;
+
+    font-weight:
+        600 !important;
+}
+
+
+[data-testid="stFileUploaderDropzone"] small {
+    color:
+        rgba(255, 255, 255, 0.72) !important;
+}
+
+
+/* =========================================================
+   BROWSE FILES BUTTON
+   ========================================================= */
+
+[data-testid="stFileUploaderDropzone"] button {
+    background:
+        linear-gradient(
+            135deg,
+            #1674d1,
+            #395edb,
+            #7c3aed
+        ) !important;
+
+    color:
+        #ffffff !important;
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.25) !important;
+
+    border-radius:
+        9px !important;
+
+    font-weight:
+        800 !important;
+
+    padding:
+        7px 16px !important;
+
+    box-shadow:
+        0 0 10px
+        rgba(22, 116, 209, 0.35),
+        0 0 20px
+        rgba(124, 58, 237, 0.20) !important;
+
+    transition:
+        all 0.25s ease !important;
+}
+
+
+[data-testid="stFileUploaderDropzone"] button:hover {
+    background:
+        linear-gradient(
+            135deg,
+            #43a5ff,
+            #7c3aed,
+            #ec4899
+        ) !important;
+
+    color:
+        #ffffff !important;
+
+    transform:
+        scale(1.04) !important;
+
+    box-shadow:
+        0 0 12px
+        #43a5ff,
+        0 0 28px
+        rgba(124, 58, 237, 0.45) !important;
+}
+
+
+/* =========================================================
+   FILE UPLOADER ICON
+   ========================================================= */
+
+[data-testid="stFileUploaderDropzone"] svg {
+    color:
+        #43a5ff !important;
+
+    filter:
+        drop-shadow(
+            0 0 5px
+            rgba(67, 165, 255, 0.65)
+        );
+}
+
+
+/* =========================================================
+   RESET BUTTON
+   ========================================================= */
+
+section[data-testid="stSidebar"] button {
+    transition:
+        all 0.25s ease !important;
+}
+
+
+section[data-testid="stSidebar"] button:hover {
+    transform:
+        translateY(-1px);
+}
+
+
+/* Reset button specifically */
+
+section[data-testid="stSidebar"]
+button[kind="secondary"] {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(22, 116, 209, 0.20),
+            rgba(124, 58, 237, 0.18)
+        ) !important;
+
+    color:
+        #ffffff !important;
+
+    border:
+        1px solid
+        rgba(67, 165, 255, 0.45) !important;
+
+    border-radius:
+        8px !important;
+
+    font-weight:
+        700 !important;
+
+    box-shadow:
+        0 0 8px
+        rgba(22, 116, 209, 0.15) !important;
+}
+
+
+section[data-testid="stSidebar"]
+button[kind="secondary"]:hover {
+    background:
+        linear-gradient(
+            135deg,
+            #1674d1,
+            #7c3aed
+        ) !important;
+
+    border-color:
+        #8ecbff !important;
+
+    box-shadow:
+        0 0 10px
+        rgba(67, 165, 255, 0.50),
+        0 0 22px
+        rgba(124, 58, 237, 0.25) !important;
+
+    color:
+        #ffffff !important;
+}
+
+
+/* =========================================================
+   SUCCESS / ERROR / WARNING MESSAGES
+   ========================================================= */
+
+[data-testid="stAlert"] {
+    border-radius:
+        9px !important;
+
+    font-size:
+        11px !important;
+}
+
+
+/* Success */
+
+div[data-baseweb="notification"] {
+    border-radius:
+        9px !important;
+}
+
+
+/* =========================================================
+   DATAFRAME
+   ========================================================= */
+
+[data-testid="stDataFrame"] {
+    border:
+        1px solid
+        var(--border) !important;
+
+    border-radius:
+        10px !important;
+
+    overflow:
+        hidden !important;
+
+    box-shadow:
+        var(--shadow-sm);
+}
+
+
+/* =========================================================
+   EXPANDER
+   ========================================================= */
+
+[data-testid="stExpander"] {
+    border:
+        1px solid
+        var(--border) !important;
+
+    border-radius:
+        9px !important;
+
+    background:
+        rgba(255, 255, 255, 0.75) !important;
+}
+
+
+[data-testid="stExpander"]:hover {
+    border-color:
+        #bcd4ec !important;
+}
+
+
+/* =========================================================
+   PLOTLY CHART CONTAINER
+   ========================================================= */
+
+[data-testid="stPlotlyChart"] {
+    background:
+        #ffffff;
+
+    border-radius:
+        12px;
+
+    overflow:
+        hidden;
+}
+
+
+/* =========================================================
+   INSIGHT CARDS
+   ========================================================= */
+
+.insight-card {
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff,
+            #f7fbff
+        );
+
+    border:
+        1px solid
+        var(--border);
+
+    border-left:
+        4px solid
+        #1674d1;
+
+    border-radius:
+        10px;
+
+    padding:
+        14px 16px;
+
+    margin-bottom:
+        10px;
+
+    box-shadow:
+        var(--shadow-sm);
+
+    transition:
+        all 0.25s ease;
+}
+
+
+.insight-card:hover {
+    transform:
+        translateX(3px);
+
+    box-shadow:
+        var(--shadow-md);
+}
+
+
+.insight-title {
+    color:
+        var(--text-dark);
+
+    font-size:
+        12px;
+
+    font-weight:
+        800;
+
+    margin-bottom:
+        5px;
+}
+
+
+.insight-text {
+    color:
+        var(--muted);
+
+    font-size:
+        10px;
+
+    line-height:
+        1.55;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.footer {
+    margin-top:
+        35px;
+
+    padding:
+        16px;
+
+    text-align:
+        center;
+
+    color:
+        #8495a8;
+
+    font-size:
+        10px;
+
+    border-top:
+        1px solid
+        var(--border);
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(22, 116, 209, 0.04),
+            rgba(124, 58, 237, 0.04),
+            transparent
+        );
+}
+
+
+/* =========================================================
+   SCROLLBAR
+   ========================================================= */
+
+::-webkit-scrollbar {
+    width:
+        7px;
+
+    height:
+        7px;
+}
+
+
+::-webkit-scrollbar-track {
+    background:
+        #eef3f8;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background:
+        linear-gradient(
+            180deg,
+            #1674d1,
+            #7c3aed
+        );
+
+    border-radius:
+        10px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background:
+        linear-gradient(
+            180deg,
+            #43a5ff,
+            #a78bfa
+        );
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.stButton > button {
+    border-radius:
+        8px !important;
+
+    font-weight:
+        700 !important;
+
+    transition:
+        all 0.25s ease !important;
+}
+
+
+.stButton > button:hover {
+    transform:
+        translateY(-1px);
+
+    box-shadow:
+        0 0 12px
+        rgba(22, 116, 209, 0.22) !important;
+}
+
+
+/* =========================================================
+   GENERAL LINKS
+   ========================================================= */
+
+a {
+    transition:
+        all 0.2s ease;
+}
+
+
+/* =========================================================
+   MOBILE RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .main .block-container {
+        padding-left:
+            1rem !important;
+
+        padding-right:
+            1rem !important;
+    }
+
+    .hero-title {
+        font-size:
+            24px;
+    }
+
+    .kpi-value {
+        font-size:
+            17px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .hero-title {
+        font-size:
+            21px;
+    }
+
+    .hero-subtitle {
+        font-size:
+            11px;
+    }
+
+    .section-title {
+        font-size:
+            14px;
+    }
+
+}
+
+
+/* =========================================================
+   COLORFUL ACCENT ANIMATION
+   ========================================================= */
+
+.kpi-card:nth-child(1)::before {
+    background:
+        linear-gradient(
+            90deg,
+            #1674d1,
+            #43a5ff
+        );
+}
+
+.kpi-card:nth-child(2)::before {
+    background:
+        linear-gradient(
+            90deg,
+            #28b67a,
+            #06b6d4
+        );
+}
+
+.kpi-card:nth-child(3)::before {
+    background:
+        linear-gradient(
+            90deg,
+            #7c3aed,
+            #a78bfa
+        );
+}
+
+.kpi-card:nth-child(4)::before {
+    background:
+        linear-gradient(
+            90deg,
+            #ec4899,
+            #f97316
+        );
+}
+
+.kpi-card:nth-child(5)::before {
+    background:
+        linear-gradient(
+            90deg,
+            #f59e0b,
+            #ef4444
+        );
+}
+
+
+/* =========================================================
+   FINAL POLISH
+   ========================================================= */
+
+[data-testid="stSidebar"] p {
+    color:
+        rgba(255, 255, 255, 0.78);
+}
+
+
+[data-testid="stSidebar"] small {
+    color:
+        rgba(255, 255, 255, 0.62) !important;
+}
+
+
+[data-testid="stSidebar"] [data-testid="stCaptionContainer"] {
+    color:
+        rgba(255, 255, 255, 0.62) !important;
+}
+
+
+/* Keep sidebar uploader caption readable */
+
+[data-testid="stSidebar"]
+[data-testid="stFileUploader"] {
+    color:
+        #ffffff !important;
+}
+
+
+/* =========================================================
+   END NEXA ANALYTICS THEME
+   ========================================================= */
